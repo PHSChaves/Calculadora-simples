@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" lang="pt-bt">
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1 id='title'>Calculadora</h1>
+            <div class="main">
+                <form name='form'>
+                    <input class="textview" name='numberInput'>
+                </form>
+                <table>
+                    <td>
+                        <input type="button" class='button' onclick='c()' value="C">
+                        <input type="button" class='button' onclick="apagar()" value="<">
+                        <input type="button" class='button' onclick="input('/')" value="/">
+                        <input type="button" class='button' onclick="input('*')" value="*">
+                    </td>
+                    <tr>
+                        <td>
+                            <input type="button" class='button' onclick="input(7)" value="7">
+                            <input type="button" class='button' onclick="input(8)" value="8">
+                            <input type="button" class='button' onclick="input(9)" value="9">
+                            <input type="button" class='button' onclick="input('+')" value="+">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" class='button' onclick="input(4)" value="4">
+                            <input type="button" class='button' onclick="input(5)" value="5">
+                            <input type="button" class='button' onclick="input(6)" value="6">
+                            <input type="button" class='button' onclick="input('-')" value="-">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="button" class='button' onclick="input(1)" value="1">
+                            <input type="button" class='button' onclick="input(2)" value="2">
+                            <input type="button" class='button' onclick="input(3)" value="3">
+                            <input type="button" class='button' onclick='igual()' value="=">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="fix-display">
+                            <input type="hidden">
+                            <input type='button' class='button' id='n0'>
+                            <input type='button' value='0' onclick="input(0)" class='button' id='n0'>
+                            <input type='button' class='button' id='n0'>
+                            <input type='button' value='.' onclick="input('.')" class='button' id='n0'>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
